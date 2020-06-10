@@ -1,0 +1,108 @@
+{
+  "permissions": "BAN_MEMBERS",
+  "restriction": "1",
+  "name": "clearwarns",
+  "actions": [
+    {
+      "member": "0",
+      "comparison": "2",
+      "iftrue": "2",
+      "iffalseVal": "",
+      "iftrueVal": "11",
+      "dataName": "warns",
+      "varName": "",
+      "iffalse": "0",
+      "value": "0",
+      "name": "Check Member Data"
+    },
+    {
+      "value": "1",
+      "comparison": "0",
+      "iftrue": "0",
+      "iffalseVal": "9",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "condition": "1",
+      "name": "Check Parameters"
+    },
+    {
+      "member": "0",
+      "name": "Control Member Data",
+      "varName": "",
+      "dataName": "warns",
+      "changeType": "0",
+      "value": "0"
+    },
+    {
+      "color": "GREEN",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "reset",
+      "title": "Clear Warns",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "reset",
+      "name": "Set Embed Description",
+      "message": "The warns for the user: ${mentionedUser} \nhave been set to 0\n"
+    },
+    {
+      "storage": "1",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "reset",
+      "channel": "0",
+      "iffalse": "0",
+      "storage3": "0",
+      "iffalseVal": ""
+    },
+    {
+      "measurement": "1",
+      "name": "Wait",
+      "time": "7"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message",
+      "message": "Hey ${member}, please mention a user in order to clear his commands.",
+      "varName": "",
+      "channel": "0",
+      "iffalse": "0",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message",
+      "message": "${member} This member has not been warned yet.",
+      "varName": "",
+      "channel": "0",
+      "iffalse": "0",
+      "iffalseVal": ""
+    }
+  ],
+  "_id": "pgaVu"
+}
