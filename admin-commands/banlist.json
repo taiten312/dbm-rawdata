@@ -1,0 +1,111 @@
+{
+  "permissions": "BAN_MEMBERS",
+  "restriction": "1",
+  "name": "banlist",
+  "actions": [
+    {
+      "info": "41",
+      "storage": "1",
+      "varName2": "banlist",
+      "name": "Store Server Info",
+      "varName": "",
+      "server": "0"
+    },
+    {
+      "member": "1",
+      "iftrue": "2",
+      "iffalseVal": "",
+      "iftrueVal": "7",
+      "varName": "",
+      "permission": "BAN_MEMBERS",
+      "iffalse": "0",
+      "name": "Check Member Permissions"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "error",
+      "title": "**ERROR**",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "error",
+      "name": "Set Embed Description",
+      "message": ":x: Invalid permissions."
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "error",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "banlistembed",
+      "title": "Banlist",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"banlist\")}",
+      "varName": "banlistembed",
+      "fieldName": ""
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "banlistembed",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    }
+  ],
+  "_id": "UbXhQ"
+}
