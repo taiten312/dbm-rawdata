@@ -1,0 +1,60 @@
+{
+  "permissions": "MANAGE_CHANNELS",
+  "restriction": "1",
+  "name": "lock",
+  "actions": [
+    {
+      "member": "1",
+      "iftrue": "0",
+      "iffalseVal": "8",
+      "iftrueVal": "",
+      "varName": "",
+      "permission": "MANAGE_CHANNELS",
+      "iffalse": "1",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "state": "1",
+      "name": "Set Channel Permissions",
+      "permission": "SEND_MESSAGES"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "lock",
+      "title": "",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "lock",
+      "name": "Set Embed Description",
+      "message": "🔒Channel locked!"
+    },
+    {
+      "storage": "1",
+      "varName": "lock",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_id": "XAMLt"
+}
