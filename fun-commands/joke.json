@@ -1,0 +1,60 @@
+{
+  "name": "joke",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "xakBS",
+  "actions": [
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://icanhazdadjoke.com/",
+      "path": "joke",
+      "storage": "1",
+      "varName": "joke",
+      "debugMode": "1",
+      "headers": "",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "title": "Joke",
+      "author": "",
+      "color": "#32a852",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "${tempVars(\"joke\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
