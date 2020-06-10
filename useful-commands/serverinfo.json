@@ -1,0 +1,161 @@
+{
+  "permissions": "NONE",
+  "restriction": "1",
+  "name": "serverinfo",
+  "actions": [
+    {
+      "info": "2",
+      "storage": "1",
+      "varName2": "name",
+      "name": "Store Server Info",
+      "varName": "",
+      "server": "0"
+    },
+    {
+      "info": "11",
+      "storage": "1",
+      "varName2": "owner",
+      "name": "Store Server Info",
+      "varName": "",
+      "server": "0"
+    },
+    {
+      "info": "5",
+      "storage": "1",
+      "varName2": "icon",
+      "name": "Store Server Info",
+      "varName": "",
+      "server": "0"
+    },
+    {
+      "info": "24",
+      "storage": "1",
+      "varName2": "emoji",
+      "name": "Store Server Info",
+      "varName": "",
+      "server": "0"
+    },
+    {
+      "info": "18",
+      "storage": "1",
+      "varName2": "creation",
+      "name": "Store Server Info",
+      "varName": "",
+      "server": "0"
+    },
+    {
+      "info": "4",
+      "storage": "1",
+      "varName2": "region",
+      "name": "Store Server Info",
+      "varName": "",
+      "server": "0"
+    },
+    {
+      "info": "37",
+      "storage": "1",
+      "varName2": "rolecount",
+      "name": "Store Server Info",
+      "varName": "",
+      "server": "0"
+    },
+    {
+      "info": "8",
+      "storage": "1",
+      "varName2": "afkc",
+      "name": "Store Server Info",
+      "varName": "",
+      "server": "0"
+    },
+    {
+      "color": "",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "${tempVars(\"icon\")}",
+      "varName": "serverinfo",
+      "title": "",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "Server Information",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"name\")}",
+      "varName": "serverinfo",
+      "fieldName": "Server Name"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"owner\")}",
+      "varName": "serverinfo",
+      "fieldName": "Server Owner"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"region\")}",
+      "varName": "serverinfo",
+      "fieldName": "Server Region"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"rolecount\")}",
+      "varName": "serverinfo",
+      "fieldName": "Role Count"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"afkc\")}",
+      "varName": "serverinfo",
+      "fieldName": "AFK Channel"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"emoji\")}",
+      "varName": "serverinfo",
+      "fieldName": "Emotes"
+    },
+    {
+      "footerIcon": "",
+      "storage": "1",
+      "name": "Set Embed Footer",
+      "message": "creation date · ${new Date(tempVars(\"creation\")).toLocaleDateString(\"en-US\")}",
+      "varName": "serverinfo"
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "serverinfo",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    }
+  ],
+  "_id": "hHRpo"
+}
