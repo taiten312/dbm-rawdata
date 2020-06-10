@@ -1,0 +1,57 @@
+{
+  "permissions": "NONE",
+  "restriction": "1",
+  "name": "servers",
+  "actions": [
+    {
+      "info": "3",
+      "storage": "1",
+      "varName2": "guilds",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "color": "",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "servers",
+      "title": "Servers",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "false",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "servers",
+      "name": "Set Embed Description",
+      "message": "This bot is currently active on **${tempVars(\"guilds\")}** servers."
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "servers",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ],
+  "_id": "lwUgp"
+}
