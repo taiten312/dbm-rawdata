@@ -1,0 +1,42 @@
+{
+  "permissions": "BAN_MEMBERS",
+  "restriction": "1",
+  "name": "warnsetup",
+  "actions": [
+    {
+      "storage": "1",
+      "varName": "warns",
+      "channelName": "warns",
+      "name": "Create Category Channel",
+      "position": "3"
+    },
+    {
+      "info": "0",
+      "storage": "1",
+      "category": "1",
+      "name": "Store Category Info",
+      "varName": "warns",
+      "varName2": "cid"
+    },
+    {
+      "storage": "2",
+      "channelName": "warn logs",
+      "position": "",
+      "topic": "",
+      "varName": "warns cahnnel",
+      "categoryID": "${tempVars(\"cid\")}",
+      "name": "Create Text Channel"
+    },
+    {
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message",
+      "message": "Warn-log has been set up! \nPlease make sure to set the warn channel private, if you don't want everyone to see it.\n",
+      "varName": "",
+      "channel": "0",
+      "iffalse": "0",
+      "iffalseVal": ""
+    }
+  ],
+  "_id": "RWTBd"
+}
