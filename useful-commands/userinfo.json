@@ -1,0 +1,252 @@
+{
+  "comType": "0",
+  "name": "userinfo",
+  "permissions": "NONE",
+  "_id": "nOwJP",
+  "actions": [
+    {
+      "value": "1",
+      "comparison": "0",
+      "iftrue": "3",
+      "iffalseVal": "",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "condition": "1",
+      "name": "Check Parameters"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "userinfo2",
+      "title": "**ERROR**",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "userinfo2",
+      "name": "Set Embed Description",
+      "message": ":x: Invalid <member> argument given.\n\nUsage: \n.userinfo [@member] "
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "userinfo2",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "member": "0",
+      "varName2": "id",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "info": "11",
+      "member": "0",
+      "varName2": "status",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "info": "18",
+      "member": "0",
+      "varName2": "tag",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "info": "2",
+      "member": "0",
+      "varName2": "username",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "info": "4",
+      "member": "0",
+      "varName2": "color",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "info": "14",
+      "member": "0",
+      "varName2": "joindate",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "info": "17",
+      "member": "0",
+      "varName2": "creationdate",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "info": "12",
+      "member": "0",
+      "varName2": "avatarurlembed",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "info": "12",
+      "member": "0",
+      "varName2": "avatarurl",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "color": "",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "userinfo",
+      "title": "Userinfo",
+      "hour": "",
+      "authorIcon": "${tempVars(\"avatarurlembed\")}",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"tag\")}\n",
+      "varName": "userinfo",
+      "fieldName": "Tag: "
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"username\")}\n",
+      "varName": "userinfo",
+      "fieldName": "Username: "
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"id\")}\n",
+      "varName": "userinfo",
+      "fieldName": "ID: "
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"color\")}\n",
+      "varName": "userinfo",
+      "fieldName": "Color:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${new Date(tempVars(\"joindate\")).toLocaleDateString(\"en-US\")}",
+      "varName": "userinfo",
+      "fieldName": "Join date:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"avatarurl\")}\n",
+      "varName": "userinfo",
+      "fieldName": "Avatar URL:"
+    },
+    {
+      "Edit11": "2",
+      "Edit10": "0",
+      "Edit12": "0",
+      "name": "Edit Embed Object MOD",
+      "imageUrl2": "",
+      "fieldDescription": "",
+      "fieldName": "",
+      "Edit9": "1",
+      "Edit8": "0",
+      "title": "",
+      "Edit0": "0",
+      "Edit1": "0",
+      "authorUrl": "",
+      "Edit3": "0",
+      "Edit2": "0",
+      "Edit5": "1",
+      "Edit4": "0",
+      "Edit7": "0",
+      "Edit6": "0",
+      "color": "",
+      "url": "",
+      "footer": "User created on",
+      "storage": "1",
+      "authorIcon": "",
+      "varName": "userinfo",
+      "thumbUrl2": "",
+      "fieldNum": "",
+      "footerIcon": "",
+      "thumbUrl": "${mentionedUser.displayAvatarURL}",
+      "description": "",
+      "fieldInline": "0",
+      "imageUrl": "",
+      "author": "",
+      "timestamp": "${mentionedUser.createdTimestamp}"
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "userinfo",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    }
+  ],
+  "restriction": "1"
+}
