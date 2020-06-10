@@ -1,0 +1,266 @@
+{
+  "comType": "0",
+  "name": "roleinfo",
+  "permissions": "NONE",
+  "_id": "HuiuP",
+  "actions": [
+    {
+      "value": "1",
+      "comparison": "0",
+      "iftrue": "3",
+      "iffalseVal": "",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "condition": "3",
+      "name": "Check Parameters"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "roleinfo2",
+      "title": "**ERROR**",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "roleinfo2",
+      "name": "Set Embed Description",
+      "message": ":x: Invalid <role> argument given.\n\nUsage: \n.roleinfo [@role] "
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "roleinfo2",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "name": "Store Command Params",
+      "storage": "1",
+      "varName": "roleName"
+    },
+    {
+      "info": "1",
+      "find": "${tempVars(\"roleName\")}",
+      "name": "Find Role",
+      "storage": "1",
+      "varName": "role"
+    },
+    {
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Role Info",
+      "role": "0",
+      "varName": "role"
+    },
+    {
+      "info": "11",
+      "storage": "1",
+      "varName2": "perms",
+      "name": "Store Role Info",
+      "role": "0",
+      "varName": ""
+    },
+    {
+      "info": "3",
+      "storage": "1",
+      "varName2": "color",
+      "name": "Store Role Info",
+      "role": "0",
+      "varName": "role"
+    },
+    {
+      "info": "4",
+      "storage": "1",
+      "varName2": "position",
+      "name": "Store Role Info",
+      "role": "0",
+      "varName": "role"
+    },
+    {
+      "info": "5",
+      "storage": "1",
+      "varName2": "timestamp",
+      "name": "Store Role Info",
+      "role": "0",
+      "varName": "role"
+    },
+    {
+      "info": "6",
+      "storage": "1",
+      "varName2": "mention",
+      "name": "Store Role Info",
+      "role": "0",
+      "varName": ""
+    },
+    {
+      "info": "7",
+      "storage": "1",
+      "varName2": "seperate",
+      "name": "Store Role Info",
+      "role": "0",
+      "varName": ""
+    },
+    {
+      "info": "10",
+      "storage": "1",
+      "varName2": "creationDate",
+      "name": "Store Role Info",
+      "role": "0",
+      "varName": "role"
+    },
+    {
+      "color": "",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "roleinfo",
+      "title": "Roleinfo",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"roleName\")}",
+      "varName": "roleinfo",
+      "fieldName": "Name:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"id\")}",
+      "varName": "roleinfo",
+      "fieldName": "ID:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"color\")}",
+      "varName": "roleinfo",
+      "fieldName": "Color:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"position\")}",
+      "varName": "roleinfo",
+      "fieldName": "Position:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"timestamp\")}",
+      "varName": "roleinfo",
+      "fieldName": "Timestamp:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"mention\")}",
+      "varName": "roleinfo",
+      "fieldName": "Mentionable"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"seperate\")}",
+      "varName": "roleinfo",
+      "fieldName": "Seperate:"
+    },
+    {
+      "Edit11": "2",
+      "Edit10": "0",
+      "Edit12": "0",
+      "name": "Edit Embed Object MOD",
+      "imageUrl2": "",
+      "fieldDescription": "",
+      "fieldName": "",
+      "Edit9": "1",
+      "Edit8": "0",
+      "title": "",
+      "Edit0": "0",
+      "Edit1": "0",
+      "authorUrl": "",
+      "Edit3": "0",
+      "Edit2": "0",
+      "Edit5": "0",
+      "Edit4": "0",
+      "Edit7": "0",
+      "Edit6": "0",
+      "color": "",
+      "url": "",
+      "footer": "Role created on",
+      "storage": "1",
+      "authorIcon": "",
+      "varName": "roleinfo",
+      "thumbUrl2": "",
+      "fieldNum": "",
+      "footerIcon": "",
+      "thumbUrl": "",
+      "description": "",
+      "fieldInline": "0",
+      "imageUrl": "",
+      "author": "",
+      "timestamp": "${tempVars(\"creationDate\")}"
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "roleinfo",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    }
+  ],
+  "restriction": "1"
+}
