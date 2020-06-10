@@ -7,6 +7,7 @@ DBM raw data for a variety of commands and events.
 - Right click on the new command you just created
 - Click on "Edit Raw Data" 
 - Delete all code in there and replace it with the raw data you just copied 
+- Click on "Save Data" 
 
 
 
