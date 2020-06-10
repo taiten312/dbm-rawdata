@@ -1,5 +1,3 @@
-DBM raw data for a variety of commands and events. 
-
 ### How to use raw data:
 
 - Copy the raw data from one of the .json files in the repository
