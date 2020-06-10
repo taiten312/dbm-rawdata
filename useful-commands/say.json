@@ -1,0 +1,76 @@
+{
+  "permissions": "NONE",
+  "restriction": "1",
+  "name": "say",
+  "actions": [
+    {
+      "info": "3",
+      "member": "1",
+      "varName2": "membertag",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "info": "12",
+      "member": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "name": "Store Command Params",
+      "storage": "1",
+      "varName": "message"
+    },
+    {
+      "color": "RANDOM",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "em",
+      "title": "",
+      "hour": "",
+      "authorIcon": "${tempVars(\"avatar\")}",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "${tempVars(\"membertag\")}",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "em",
+      "name": "Set Embed Description",
+      "message": "${tempVars(\"message\")}"
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "em",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    }
+  ],
+  "_id": "aNKQx"
+}
