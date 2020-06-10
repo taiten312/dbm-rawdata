@@ -1,0 +1,49 @@
+{
+  "comType": "0",
+  "name": "purge",
+  "permissions": "MANAGE_MESSAGES",
+  "_id": "Kgdcr",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "name": "Store Command Params",
+      "storage": "1",
+      "varName": "deletedmsgs"
+    },
+    {
+      "count": "${tempVars(\"deletedmsgs\")}",
+      "name": "Delete Bulk Messages",
+      "varName": "",
+      "channel": "0",
+      "condition": "0",
+      "custom": ""
+    },
+    {
+      "storage": "1",
+      "varName2": "purge",
+      "name": "Send Message",
+      "message": "**I have cleared `${tempVars(\"deletedmsgs\")}` messages for you! :D**",
+      "varName": "",
+      "channel": "0",
+      "iffalse": "0",
+      "iffalseVal": ""
+    },
+    {
+      "measurement": "1",
+      "name": "Wait",
+      "time": "3"
+    },
+    {
+      "storage": "1",
+      "varName": "purge",
+      "name": "Delete Message"
+    }
+  ],
+  "restriction": "1"
+}
