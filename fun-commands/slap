@@ -1,0 +1,71 @@
+{
+  "permissions": "NONE",
+  "restriction": "1",
+  "name": "slap",
+  "actions": [
+    {
+      "value": "1",
+      "comparison": "0",
+      "iftrue": "3",
+      "iffalseVal": "",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "condition": "1",
+      "name": "Check Parameters"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "slaperror",
+      "title": "**ERROR**",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "slaperror",
+      "name": "Set Embed Description",
+      "message": ":x: Invalid <member> argument given.\n\nUsage: \n.slap [@member] "
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "slaperror",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message",
+      "message": ">>> ${member} slapped ${mentionedUser} in the face!",
+      "varName": "",
+      "channel": "0",
+      "iffalse": "0",
+      "iffalseVal": ""
+    }
+  ],
+  "_id": "vEpaK"
+}
