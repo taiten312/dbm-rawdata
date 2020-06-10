@@ -1,0 +1,122 @@
+{
+  "permissions": "NONE",
+  "restriction": "1",
+  "name": "gennumber",
+  "actions": [
+    {
+      "value": "2",
+      "comparison": "0",
+      "iftrue": "3",
+      "iffalseVal": "",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "condition": "0",
+      "name": "Check Parameters"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "gennumber",
+      "title": "**ERROR**",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "gennumber",
+      "name": "Set Embed Description",
+      "message": "this ain't it chief.\n\nplease insert a minimum and maximum value."
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "gennumber",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "name": "Store Command Params",
+      "storage": "1",
+      "varName": "min"
+    },
+    {
+      "info": "0",
+      "infoIndex": "2",
+      "name": "Store Command Params",
+      "storage": "1",
+      "varName": "max"
+    },
+    {
+      "storage": "1",
+      "varName": "result",
+      "min": "${tempVars(\"min\")}",
+      "max": "${tempVars(\"max\")}",
+      "name": "Generate Random Number"
+    },
+    {
+      "color": "",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "value",
+      "title": "Value",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "value",
+      "name": "Set Embed Description",
+      "message": "The randomly generated value is: ${tempVars(\"result\")}!"
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "value",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    }
+  ],
+  "_id": "PVlOx"
+}
