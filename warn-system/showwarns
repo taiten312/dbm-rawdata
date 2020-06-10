@@ -1,0 +1,162 @@
+{
+  "permissions": "BAN_MEMBERS",
+  "restriction": "1",
+  "name": "showwarns",
+  "actions": [
+    {
+      "value": "1",
+      "comparison": "0",
+      "iftrue": "0",
+      "iffalseVal": "12",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "condition": "1",
+      "name": "Check Parameters"
+    },
+    {
+      "member": "0",
+      "comparison": "2",
+      "iftrue": "2",
+      "iffalseVal": "",
+      "iftrueVal": "8",
+      "dataName": "warns",
+      "varName": "",
+      "iffalse": "0",
+      "value": "0",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "0",
+      "storage": "2",
+      "defaultVal": "0",
+      "varName2": "warnedtimes",
+      "name": "Store Member Data",
+      "varName": "",
+      "dataName": "warns"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "warnse",
+      "title": "Warns",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "false",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "warnse",
+      "name": "Set Embed Description",
+      "message": "The user: ` ${mentionedUser} ` ` was warned: ${serverVars(\"warnedtimes\")} `\nTo clear his warns type .clearwarns ${mentionedUser}"
+    },
+    {
+      "storage": "1",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "warnse",
+      "channel": "0",
+      "iffalse": "0",
+      "storage3": "0",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "color": "",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "no warns yet",
+      "title": "Warns",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "no warns yet",
+      "name": "Set Embed Description",
+      "message": "This user has no warns yet."
+    },
+    {
+      "storage": "1",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "no warns yet",
+      "channel": "0",
+      "iffalse": "0",
+      "storage3": "0",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "user not mem",
+      "title": "**ERROR**",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "user not mem",
+      "name": "Set Embed Description",
+      "message": ":x: Please mention a user in order to see warns!"
+    },
+    {
+      "storage": "1",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "user not mem",
+      "channel": "0",
+      "iffalse": "0",
+      "storage3": "0",
+      "iffalseVal": ""
+    }
+  ],
+  "_id": "KYWPQ"
+}
