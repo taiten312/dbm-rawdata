@@ -1,0 +1,118 @@
+{
+  "permissions": "NONE",
+  "restriction": "1",
+  "name": "flip",
+  "actions": [
+    {
+      "storage": "1",
+      "varName": "coinflip",
+      "min": "1",
+      "max": "2",
+      "name": "Generate Random Number"
+    },
+    {
+      "storage": "1",
+      "comparison": "1",
+      "iftrue": "2",
+      "iffalseVal": "",
+      "iftrueVal": "4",
+      "varName": "coinflip",
+      "iffalse": "0",
+      "value": "1",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "comparison": "1",
+      "iftrue": "2",
+      "iffalseVal": "",
+      "iftrueVal": "8",
+      "varName": "coinflip",
+      "iffalse": "0",
+      "value": "2",
+      "name": "Check Variable"
+    },
+    {
+      "color": "",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "tailsembed",
+      "title": "COINFLIP",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "tailsembed",
+      "name": "Set Embed Description",
+      "message": "The coin has landed on **TAILS**"
+    },
+    {
+      "storage": "1",
+      "varName": "tailsembed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "color": "",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "headsembed",
+      "title": "COINFLIP",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "headsembed",
+      "name": "Set Embed Description",
+      "message": "The coin has landed on **HEADS**"
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "headsembed",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ],
+  "_id": "VHURx"
+}
