@@ -1,0 +1,219 @@
+{
+  "permissions": "NONE",
+  "restriction": "1",
+  "name": "channelinfo",
+  "actions": [
+    {
+      "value": "1",
+      "comparison": "0",
+      "iftrue": "3",
+      "iffalseVal": "",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "condition": "2",
+      "name": "Check Parameters"
+    },
+    {
+      "color": "RED",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "channelinfo2",
+      "title": "**ERROR**",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "channelinfo2",
+      "name": "Set Embed Description",
+      "message": ":x: Invalid <channel> argument given.\n\nUsage: \n.userinfo [#channel] "
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "channelinfo2",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "2",
+      "storage": "1",
+      "varName2": "name",
+      "name": "Store Channel Info",
+      "varName": "",
+      "channel": "1"
+    },
+    {
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Channel Info",
+      "varName": "",
+      "channel": "1"
+    },
+    {
+      "info": "5",
+      "storage": "1",
+      "varName2": "position",
+      "name": "Store Channel Info",
+      "varName": "",
+      "channel": "1"
+    },
+    {
+      "info": "6",
+      "storage": "1",
+      "varName2": "nsfw",
+      "name": "Store Channel Info",
+      "varName": "",
+      "channel": "1"
+    },
+    {
+      "info": "3",
+      "storage": "1",
+      "varName2": "topic",
+      "name": "Store Channel Info",
+      "varName": "",
+      "channel": "1"
+    },
+    {
+      "info": "9",
+      "storage": "1",
+      "varName2": "creation",
+      "name": "Store Channel Info",
+      "varName": "",
+      "channel": "1"
+    },
+    {
+      "color": "",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "channelinfo",
+      "title": "Channelinfo",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "true",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"name\")}",
+      "varName": "channelinfo",
+      "fieldName": "Name:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"id\")}",
+      "varName": "channelinfo",
+      "fieldName": "ID:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"position\")}",
+      "varName": "channelinfo",
+      "fieldName": "Position:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"topic\")}",
+      "varName": "channelinfo",
+      "fieldName": "Topic:"
+    },
+    {
+      "storage": "1",
+      "inline": "1",
+      "name": "Add Embed Field",
+      "message": "${tempVars(\"nsfw\")}",
+      "varName": "channelinfo",
+      "fieldName": "NSFW:"
+    },
+    {
+      "Edit11": "2",
+      "Edit10": "0",
+      "Edit12": "0",
+      "name": "Edit Embed Object MOD",
+      "imageUrl2": "",
+      "fieldDescription": "",
+      "fieldName": "",
+      "Edit9": "1",
+      "Edit8": "0",
+      "title": "",
+      "Edit0": "0",
+      "Edit1": "0",
+      "authorUrl": "",
+      "Edit3": "0",
+      "Edit2": "0",
+      "Edit5": "0",
+      "Edit4": "0",
+      "Edit7": "0",
+      "Edit6": "0",
+      "color": "",
+      "url": "",
+      "footer": "Channel created on",
+      "storage": "1",
+      "authorIcon": "",
+      "varName": "channelinfo",
+      "thumbUrl2": "",
+      "fieldNum": "",
+      "footerIcon": "",
+      "thumbUrl": "",
+      "description": "",
+      "fieldInline": "0",
+      "imageUrl": "",
+      "author": "",
+      "timestamp": "${mentionedChannel.createdTimestamp}"
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "channelinfo",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    }
+  ],
+  "_id": "nyzqN"
+}
