@@ -1,0 +1,300 @@
+{
+  "comType": "0",
+  "name": "avatar",
+  "_id": "zVgYb",
+  "permissions": "NONE",
+  "_aliases": [
+    "pfp"
+  ],
+  "actions": [
+    {
+      "color": "#c0c0c0",
+      "comment": "---",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "server": "0",
+      "varName2": "bot",
+      "name": "Get Bot as Member"
+    },
+    {
+      "color": "#c0c0c0",
+      "comment": "---",
+      "name": "Comment"
+    },
+    {
+      "value": "1",
+      "comparison": "0",
+      "iftrue": "0",
+      "iffalseVal": "1",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "condition": "1",
+      "name": "Check Parameters"
+    },
+    {
+      "color": "#00ffff",
+      "description": "Jump To [MENTIONED]",
+      "jump_to_anchor": "[MENTIONED]",
+      "name": "Jump to Anchor"
+    },
+    {
+      "value": "0",
+      "comparison": "2",
+      "iftrue": "0",
+      "iffalseVal": "1",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "condition": "0",
+      "name": "Check Parameters"
+    },
+    {
+      "color": "#00ffff",
+      "description": "Jump To [FIND-USER]",
+      "jump_to_anchor": "[FIND-USER]",
+      "name": "Jump to Anchor"
+    },
+    {
+      "anchor_id": "[USER]",
+      "color": "#00ffff",
+      "description": "[USER]",
+      "name": "Create Anchor"
+    },
+    {
+      "info": "0",
+      "member": "1",
+      "varName2": "user",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "color": "#8080c0",
+      "description": "Jump To [EXECUTE]",
+      "jump_to_anchor": "[EXECUTE]",
+      "name": "Jump to Anchor"
+    },
+    {
+      "anchor_id": "[MENTIONED]",
+      "color": "#00ffff",
+      "description": "[MENTIONED]",
+      "name": "Create Anchor"
+    },
+    {
+      "info": "0",
+      "member": "0",
+      "varName2": "user",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": ""
+    },
+    {
+      "color": "#8080c0",
+      "description": "Jump To [EXECUTE]",
+      "jump_to_anchor": "[EXECUTE]",
+      "name": "Jump to Anchor"
+    },
+    {
+      "anchor_id": "[FIND-USER]",
+      "color": "#00ffff",
+      "description": "[FIND-USER]",
+      "name": "Create Anchor"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "name": "Store Command Params",
+      "storage": "1",
+      "varName": "findUser"
+    },
+    {
+      "find2": "0",
+      "info": "0",
+      "iffalseVal": "",
+      "varName": "user",
+      "storage": "1",
+      "find": "${tempVars(\"findUser\")}",
+      "iffalse": "0",
+      "name": "Find Member"
+    },
+    {
+      "storage": "1",
+      "comparison": "0",
+      "iftrue": "3",
+      "iffalseVal": "",
+      "iftrueVal": "6",
+      "varName": "user",
+      "iffalse": "0",
+      "value": "",
+      "name": "Check Variable"
+    },
+    {
+      "find2": "0",
+      "info": "1",
+      "iffalseVal": "",
+      "varName": "user",
+      "storage": "1",
+      "find": "${tempVars(\"findUser\")}",
+      "iffalse": "0",
+      "name": "Find Member"
+    },
+    {
+      "storage": "1",
+      "comparison": "0",
+      "iftrue": "3",
+      "iffalseVal": "",
+      "iftrueVal": "4",
+      "varName": "user",
+      "iffalse": "0",
+      "value": "",
+      "name": "Check Variable"
+    },
+    {
+      "find2": "0",
+      "info": "3",
+      "iffalseVal": "",
+      "varName": "user",
+      "storage": "1",
+      "find": "${tempVars(\"findUser\")}",
+      "iffalse": "0",
+      "name": "Find Member"
+    },
+    {
+      "storage": "1",
+      "comparison": "0",
+      "iftrue": "3",
+      "iffalseVal": "",
+      "iftrueVal": "2",
+      "varName": "user",
+      "iffalse": "0",
+      "value": "",
+      "name": "Check Variable"
+    },
+    {
+      "find2": "0",
+      "info": "2",
+      "iffalseVal": "",
+      "varName": "user",
+      "storage": "1",
+      "find": "${tempVars(\"findUser\")}",
+      "iffalse": "0",
+      "name": "Find Member"
+    },
+    {
+      "storage": "1",
+      "comparison": "0",
+      "iftrue": "0",
+      "iffalseVal": "3",
+      "iftrueVal": "2",
+      "varName": "user",
+      "iffalse": "3",
+      "value": "",
+      "name": "Check Variable"
+    },
+    {
+      "color": "#808000",
+      "comment": "=",
+      "name": "Comment"
+    },
+    {
+      "info": "0",
+      "member": "2",
+      "varName2": "user",
+      "name": "Store Member Info",
+      "storage": "1",
+      "varName": "user"
+    },
+    {
+      "color": "#8080c0",
+      "description": "Jump To [EXECUTE]",
+      "jump_to_anchor": "[EXECUTE]",
+      "name": "Jump to Anchor"
+    },
+    {
+      "color": "36393E",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "msg_cant_find_member",
+      "title": "",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "false",
+      "second": "",
+      "authorUrl": "",
+      "url": "",
+      "day": "",
+      "imageUrl": "",
+      "author": "",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "varName": "msg_cant_find_member",
+      "name": "Set Embed Description",
+      "message": "${member} | Sorry, could not find the given user."
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "msg_cant_find_member",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "[EXECUTE]",
+      "color": "#8080c0",
+      "description": "[EXECUTE]",
+      "name": "Create Anchor"
+    },
+    {
+      "color": "${tempVars(\"bot\").colorRole.hexColor}",
+      "storage": "1",
+      "year": "",
+      "name": "Create Embed Message",
+      "minute": "",
+      "debug": "false",
+      "thumbUrl": "",
+      "varName": "msg_image_avatar",
+      "title": "",
+      "hour": "",
+      "authorIcon": "",
+      "month": "",
+      "timestamp": "false",
+      "second": "",
+      "authorUrl": "https://discord.com/users/${tempVars(\"user\").user.id}",
+      "url": "",
+      "day": "",
+      "imageUrl": "${tempVars(\"user\").user.displayAvatarURL}",
+      "author": "${tempVars(\"user\").user.tag}'s Avatar",
+      "text": ""
+    },
+    {
+      "storage": "1",
+      "storage3": "0",
+      "varName2": "",
+      "name": "Send Embed Message",
+      "varName3": "",
+      "varName": "msg_image_avatar",
+      "channel": "0",
+      "iffalse": "0",
+      "messageContent": "",
+      "iffalseVal": ""
+    }
+  ],
+  "restriction": "1"
+}
