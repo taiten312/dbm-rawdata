@@ -3,7 +3,7 @@ The DBM beta is required for most of these commands.
 Here is a guide on how to join the DBM beta: 
 https://steamcommunity.com/app/682130/discussions/0/1729837292625897852/
 
-————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+——————————————————————————————————————————————————————————————————————————
 
 # How to use command raw data:
 
