@@ -1,0 +1,139 @@
+{
+  "name": "poll",
+  "permissions": "BAN_MEMBERS",
+  "restriction": "1",
+  "_id": "kBOeR",
+  "actions": [
+    {
+      "condition": "0",
+      "comparison": "2",
+      "value": "0",
+      "iftrue": "2",
+      "iftrueVal": "6",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "title": "**ERROR**",
+      "author": "",
+      "color": "RED",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "error",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "error",
+      "message": ":x: Invalid <text> argument given.\n\nUsage: \n.poll <your text> ",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "error",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "title": "POLL",
+      "author": "",
+      "color": "GREEN",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embedpoll",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embedpoll",
+      "message": "${tempVars(\"text\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embedpoll",
+      "message": "👍Yes | 👎No",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embedpoll",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "4",
+      "storage": "1",
+      "varName2": "msg",
+      "name": "Store Channel Info"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "emoji": "4",
+      "varName2": "👍",
+      "varName3": "",
+      "name": "Add Reaction"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "emoji": "4",
+      "varName2": "👎",
+      "varName3": "",
+      "name": "Add Reaction"
+    }
+  ]
+}
